@@ -1,6 +1,11 @@
 
 // app.js
-var nanduApp = angular.module('nanduApp', ['ui.router','ui.grid','ui.grid.pagination']);
+var nanduApp = angular.module('nanduApp', [
+    'ui.router',
+    'ui.grid',
+    'ui.grid.pagination',
+    'ui.bootstrap'
+]);
 
 nanduApp.config(function($stateProvider, $urlRouterProvider) {
 

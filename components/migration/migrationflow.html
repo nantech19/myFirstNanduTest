@@ -10,15 +10,7 @@
     <div ui-grid="gridOptions2" ui-grid-pagination class="grid"></div>
     <br>
     <p>Current page: {{ gridApi2.pagination.getPage() }} of {{ gridApi2.pagination.getTotalPages() }}</p>
-    <!--<button type="button" class="btn btn-success" ng-click="gridApi2.pagination.previousPage()">
-        previous page
-    </button>
-    <button type="button" class="btn btn-success" ng-click="gridApi2.pagination.nextPage()">
-        next page
-    </button>
-    <button type="button" class="btn btn-success" ng-click="gridApi2.pagination.seek(3)">
-        go to page 3
-    </button>-->
+
     <ul class="pagination pull-left">
         <li class="disabled"><a href="#">&laquo;</a></li>
         <li class="active"><a href="#">1</a></li>
@@ -26,5 +18,8 @@
         <li><a ng-click="gridApi2.pagination.previousPage()" >3</a></li>
         <li><a ng-click="gridApi2.pagination.seek(3)">&raquo;</a></li>
     </ul>
+    <br>
+    <br><br>
+    <ul uib-pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" num-pages="numPages"></ul>
 
 </div>
