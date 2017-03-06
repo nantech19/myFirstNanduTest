@@ -35,8 +35,8 @@ myApp.controller('migrationCtrl', ['$scope','$http', '$q', function ($scope, $ht
 
     $scope.gridOptions2 = {
         enablePaginationControls: false,
-        //paginationPageSize: 25,
-        useExternalPagination: true,
+        paginationPageSize: 25,
+//        useExternalPagination: true,
         columnDefs: [
             { name: 'name' },
             { name: 'gender' },
@@ -44,9 +44,9 @@ myApp.controller('migrationCtrl', ['$scope','$http', '$q', function ($scope, $ht
         ]
     };
 
-   // $scope.gridOptions2.onRegisterApi = function (gridApi) {
-     //   $scope.gridApi2 = gridApi;
-    //}
+    $scope.gridOptions2.onRegisterApi = function (gridApi) {
+        $scope.gridApi2 = gridApi;
+    }
 
     $http.get('https://cdn.rawgit.com/angular-ui/ui-grid.info/gh-pages/data/100.json')
         .success(function (data) {
