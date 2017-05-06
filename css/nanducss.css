@@ -3,7 +3,7 @@
 }
 body {
     padding: 0px;
-    /*background-color: #ecf0f1;*/
+    background-color: #ecf0f1;
 }
 .navbar {
     margin-bottom: 0px;
@@ -31,6 +31,19 @@ body {
 }
 
 .navbar-inverse-pageHeader {
-    background-color: #ecf0f1;
-    border-color: #ecf0f1;
+    background-color: white;
+    border-color: white;
 }
+
+.navbar-form{
+margin-top: 8px;
+}
+
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:focus, .nav-tabs > li.active > a:hover{
+   border-top: 3px solid;
+       border-top-color: #2780e3;
+       margin-bottom: -1px;
+}
+
+

@@ -61,20 +61,21 @@
                     </div>
 
                 </fieldset>
-            <br>
-            <p><strong>Super Batch Summary</strong></p>
-            <div ui-grid="gridOptions2" ui-grid-pagination class="grid"></div>
-            <br>
-            <p>Current page: {{ gridApi2.pagination.getPage() }} of {{ gridApi2.pagination.getTotalPages() }}</p>
-
-            <ul uib-pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" num-pages="numPages"></ul>
 
         </form>
     </div>
     </div>
-    </div>
-</div>
+<br>
+<p><strong>Super Batch Summary</strong></p>
+<div ui-grid="gridOptions2" ui-grid-pagination class="grid"></div>
+<br>
+<p>Current page: {{ gridApi2.pagination.getPage() }} of {{ gridApi2.pagination.getTotalPages() }}</p>
 
+<ul uib-pagination total-items="bigTotalItems" ng-model="bigCurrentPage" max-size="maxSize" class="pagination-sm" boundary-links="true" num-pages="numPages"></ul>
+
+
+</div>
+</div>
 
 
 
