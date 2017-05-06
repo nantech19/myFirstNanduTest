@@ -44,6 +44,72 @@ margin-top: 8px;
    border-top: 3px solid;
        border-top-color: #2780e3;
        margin-bottom: -1px;
+
+}
+
+.nav {
+
+    padding-left: 15px;
+
+}
+
+.info-box {
+    display: block;
+    min-height: 90px;
+    background: #ecf0f1;
+    width: 100%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+    border-radius: 2px;
+    margin-bottom: 15px;
 }
 
 
+
+.info-box-icon {
+    border-top-left-radius: 2px;
+    border-top-right-radius: 0;
+    border-bottom-right-radius: 0;
+    border-bottom-left-radius: 2px;
+    display: block;
+    float: left;
+    height: 90px;
+    width: 90px;
+    text-align: center;
+    font-size: 45px;
+    line-height: 90px;
+    background: rgba(0,0,0,0.2);
+}
+
+.info-box-content {
+    padding: 5px 10px;
+    margin-left: 90px;
+}
+.bg-aqua, .callout.callout-info, .alert-info, .label-info, .modal-info .modal-body {
+    background-color: #00c0ef !important;
+}
+.bg-red, .callout.callout-info, .alert-info, .label-info, .modal-info .modal-body {
+    background-color: red !important;
+}
+.bg-blue, .callout.callout-info, .alert-info, .label-info, .modal-info .modal-body {
+    background-color: blue !important;
+}
+.bg-orange, .callout.callout-info, .alert-info, .label-info, .modal-info .modal-body {
+    background-color: orange !important;
+}
+
+
+.info-box-text {
+    text-transform: uppercase;
+}
+.progress-description, .info-box-text {
+    display: block;
+    font-size: 14px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.info-box-number {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+}
